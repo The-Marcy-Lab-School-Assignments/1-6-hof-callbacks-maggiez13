@@ -62,7 +62,11 @@ const sortNumbersBetter = (arr, isDescending) => {
   }
 };
 
-const sortUsersByOrder = () => {
+const sortUsersByOrder = (users) => {
+  return [...users].sort((a, b) => a.order - b.order);
+  // const arrCopy = [...users];
+  // arrCopy.sort((a, b) => a.order - b.order);
+  // return arrCopy;
 };
 
 const sortUsersByName = () => {
