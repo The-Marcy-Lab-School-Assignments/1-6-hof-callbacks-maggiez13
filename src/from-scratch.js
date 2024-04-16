@@ -74,13 +74,17 @@ const sortUsersByName = (users) => {
   arrCopy.sort((a, b) => {
     if (a.name > b.name) {
       return 1; 
+      // b should come before a  
     } else if (a.name < b.name) {
       return -1;
+      // a should come before b 
     } else {
       return 0;
+      // names are the same 
     }
   });
   return arrCopy;
+  // not sure how to implement callback here 
 };
 
 module.exports = {
