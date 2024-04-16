@@ -1,8 +1,10 @@
 const myEvery = (arr, callback) => {
   for (const value of arr) {
-    if (callback) return false;
+    if (!callback(value)) return false;
+    // check if callback does not have value  
   }
   return true;
+  // only if all elements have values 
 };
 
 const sortUsersBy = (users, sortingFunction) => {
