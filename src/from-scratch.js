@@ -39,7 +39,9 @@ const myFilter = (arr, callback) => {
   return newArr; 
 };
 
-const sortWords = () => {
+const sortWords = (arr) => {
+  arrCopy = [...arr];
+  return arrCopy.sort();
 };
 
 const sortNumbers = () => {
