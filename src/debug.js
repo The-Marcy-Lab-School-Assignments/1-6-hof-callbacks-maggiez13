@@ -4,11 +4,12 @@ const myEvery = (arr, callback) => {
     // check if callback does not have value  
   }
   return true;
-  // only if all elements have values 
+  // only if all elements have values
 };
 
+
 const sortUsersBy = (users, sortingFunction) => {
-  return [...users].sort(sortingFunction());
+  return [...users].sort(sortingFunction);
 };
 
 const logEachName = (names) => {
