@@ -54,7 +54,12 @@ const sortNumbers = (arr) => {
   // return arrCopy.sort((a, b) => a - b);
 };
 
-const sortNumbersBetter = () => {
+const sortNumbersBetter = (arr, isDescending) => {
+  if (isDescending === true) {
+    return [...arr].sort((a, b) => b - a);
+  } else {
+    return arrCopy = [...arr].sort((a, b) => a - b);
+  }
 };
 
 const sortUsersByOrder = () => {
