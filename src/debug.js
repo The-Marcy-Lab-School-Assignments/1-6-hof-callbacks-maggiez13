@@ -13,11 +13,11 @@ const sortUsersBy = (users, sortingFunction) => {
 };
 
 const logEachName = (names) => {
-  return names.forEach(console.log());
+  return names.forEach(console.log);
 };
 
 const logEachUserBio = (users) => {
-  return users.forEach(console.log(users.bio));
+  return users.forEach((user) => {console.log(user.bio)});
 };
 
 module.exports = {
