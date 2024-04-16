@@ -18,7 +18,7 @@ const myMap = (arr, callback) => {
 const myFind = (arr, callback) => {
   for (let i = 0; i < arr.length; i++) {
     if (callback(arr[i])) {
-      // if callback of value is true, return value 
+      // if callback of value is truthy, return value 
       return arr[i];
     }
   }
@@ -29,7 +29,14 @@ const myFind = (arr, callback) => {
       // didn't work with else statement 
 };
 
-const myFilter = () => {
+const myFilter = (arr, callback) => {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (callback(arr[i])) {
+      newArr.push(arr[i]);
+    } 
+  }
+  return newArr; 
 };
 
 const sortWords = () => {
