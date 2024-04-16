@@ -40,7 +40,7 @@ const myFilter = (arr, callback) => {
 };
 
 const sortWords = (arr) => {
-  return arrCopy = [...arr].sort();
+  return [...arr].sort();
   // const arrCopy = [...arr].sort();
   // return arrCopy; 
   // arrCopy = [...arr];
@@ -48,7 +48,7 @@ const sortWords = (arr) => {
 };
 
 const sortNumbers = (arr) => {
-  return arrCopy = [...arr].sort((a, b) => a - b);
+  return [...arr].sort((a, b) => a - b);
     // need comparison of a - b since sort default is for strings
   // const arrCopy = [...arr];
   // return arrCopy.sort((a, b) => a - b);
