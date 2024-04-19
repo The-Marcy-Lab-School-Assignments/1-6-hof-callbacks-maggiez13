@@ -1,3 +1,4 @@
+/** FEEDBACK: Overall, great job getting all test cases to pass! */
 const myForEach = (arr, callback) => {
   for (let i = 0; i < arr.length; i++) {
     callback(arr[i]);
@@ -17,6 +18,7 @@ const myMap = (arr, callback) => {
 
 const myFind = (arr, callback) => {
   for (let i = 0; i < arr.length; i++) {
+    /** FEEDBACK: This if answers the question already because of the fact that we are asking it to evaluate the value! We are checking to see if it is truthy or falsy! */
     if (callback(arr[i])) {
       // if callback of value is truthy, return value 
       return arr[i];
